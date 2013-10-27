@@ -1,0 +1,3 @@
+[submodule "fleximg.js"]
+	path = fleximg.js
+	url = https://github.com/cioddi/fleximg.js.git
