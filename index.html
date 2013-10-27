@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
   <title>node fleximg testpage</title>
+
+  <style>
+    .testimg{
+      width:50%;
+    }
+  </style>
 </head>
 <body>
-  
+  <img class="testimg" data-src="img/test.jpg" alt="">
+
+<script src="assets/jquery.js"></script>
+<script src="fleximg.js/fleximg.js"></script>
+<script>
+// window.onload = function(){
+  fleximg_js.init({
+    remote_imagecache_url:'http://localhost:8080',
+    imagecache_folder:'imagecache'
+  });
+// }
+</script>
 </body>
 </html>
